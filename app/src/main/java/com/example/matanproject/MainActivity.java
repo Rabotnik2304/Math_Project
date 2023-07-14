@@ -33,36 +33,26 @@ public class MainActivity extends Activity {
     }
 
     private ArrayList<Item> generateSomeHierarchy() {
+
+        String[] matanTikets = getResources().getStringArray(R.array.matan_tikets);
+
         items = new ArrayList<Item>();
+        int i=0;
 
-        ListItem li1 = new ListItem("");
-        ListItem li2 = new ListItem("Item 2");
-        ListItem li3 = new ListItem("Item 3");
-
-        items.add(li1);
-        items.add(li2);
-        items.add(li3);
-
-        ListItem li11 = new ListItem("Item 1.1");
-        ListItem li12 = new ListItem("Item 1.2");
-        ListItem li13 = new ListItem("Item 1.3");
-
-        li1.addChild(li11);
-        li1.addChild(li12);
-        li1.addChild(li13);
-
-        ListItem li21 = new ListItem("Item 2.1");
-        ListItem li22 = new ListItem("Item 2.2");
-
-        li2.addChild(li21);
-        li2.addChild(li22);
-
-        ListItem li211 = new ListItem("Item 2.1.1");
-        ListItem li212 = new ListItem("Item 2.1.2");
-
-        li21.addChild(li211);
-        li21.addChild(li212);
-
+        while (i<matanTikets.length && matanTikets[i].indexOf('|')==2){
+            ListItem partTikets = new ListItem(matanTikets[i]);
+            i++;
+            while (i<matanTikets.length && matanTikets[i].indexOf('|')==5) {
+                ListItem tiket = new ListItem(matanTikets[i]);
+                i++;
+                while (i<matanTikets.length && matanTikets[i].indexOf('|')==7) {
+                    tiket.addChild(new ListItem(matanTikets[i]));
+                    i++;
+                }
+                partTikets.addChild(tiket);
+            }
+            items.add(partTikets);
+        }
         return items;
     }
 }
