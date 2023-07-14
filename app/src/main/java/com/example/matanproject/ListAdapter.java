@@ -14,9 +14,17 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 
 public class ListAdapter extends BaseAdapter {
+    private class Pair {
+        Item item;
+        int level;
 
+        Pair (Item item, int level) {
+            this.item = item;
+            this.level = level;
+        }
+    }
     private LayoutInflater mLayoutInflater; // 1
-    private ArrayList<Item> hierarchyArray; // 2
+    private ArrayList<Pair> hierarchyArray; // 2
 
     private ArrayList<Item> originalItems; // 3
     private LinkedList<Item> openItems; // 4
@@ -25,7 +33,7 @@ public class ListAdapter extends BaseAdapter {
         mLayoutInflater = LayoutInflater.from(ctx);
         originalItems = items;
 
-        hierarchyArray = new ArrayList<Item>();
+        hierarchyArray = new ArrayList<Pair>();
         openItems = new LinkedList<Item>();
 
         generateHierarchy(); // 5
@@ -38,7 +46,7 @@ public class ListAdapter extends BaseAdapter {
 
     @Override
     public Object getItem(int position) {
-        return hierarchyArray.get(position);
+        return hierarchyArray.get(position).item;
     }
 
     @Override
@@ -53,31 +61,41 @@ public class ListAdapter extends BaseAdapter {
 
         TextView title = (TextView)convertView.findViewById(R.id.title);
 
-        Item item = hierarchyArray.get(position);
+        Pair pair = hierarchyArray.get(position);
 
-        title.setText(item.getTitle());
-        title.setCompoundDrawablesWithIntrinsicBounds(item.getIconResource(), 0, 0, 0); // 6
+        title.setText(pair.item.getTitle());
+        title.setCompoundDrawablesWithIntrinsicBounds(pair.item.getIconResource(), 0, 0, 0);
+        title.setPadding((pair.level+1) * 20, 0, 0, 0);
         return convertView;
     }
     private void generateHierarchy() {
-        hierarchyArray.clear(); // 1
-        generateList(originalItems); // 2
+        hierarchyArray.clear();
+        generateList(originalItems,0);
     }
 
-    private void generateList(ArrayList<Item> items) { // 3
+    private void generateList(ArrayList<Item> items, int level) {
         for (Item i : items) {
-            hierarchyArray.add(i);
+            hierarchyArray.add(new Pair(i,level));
             if (openItems.contains(i))
-                generateList(i.getChilds());
+                generateList(i.getChilds(),level+1);
         }
     }
     public void clickOnItem (int position) {
 
-        Item i = hierarchyArray.get(position);
-        if (!openItems.remove(i))
+        Item i = hierarchyArray.get(position).item;
+        if (!closeItem(i))
             openItems.add(i);
 
         generateHierarchy();
         notifyDataSetChanged();
+    }
+
+    private boolean closeItem (Item i) {
+        if (openItems.remove(i)) {
+            for (Item c : i.getChilds())
+                 closeItem(c);
+            return true;
+        }
+        return false;
     }
 }

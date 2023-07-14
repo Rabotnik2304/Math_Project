@@ -10,32 +10,32 @@ import java.util.ArrayList;
 
 public class MainActivity extends Activity {
 
-    ArrayList<Item> items; // 1
-    ListAdapter adapter; // 2
+    ArrayList<Item> items;
+    ListAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        items = generateSomeHierarchy(); // 3
+        items = generateSomeHierarchy();
 
-        adapter = new ListAdapter(this, items); // 4
+        adapter = new ListAdapter(this, items);
 
-        ListView mList = (ListView) this.findViewById(R.id.list_item); // 5
-        mList.setAdapter(adapter); // 6
-        mList.setOnItemClickListener(new AdapterView.OnItemClickListener() { //7
+        ListView mList = (ListView) this.findViewById(R.id.list_item);
+        mList.setAdapter(adapter);
+        mList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                adapter.clickOnItem(position); //8
+                adapter.clickOnItem(position);
             }
         });
     }
 
-    private ArrayList<Item> generateSomeHierarchy() { // 9
+    private ArrayList<Item> generateSomeHierarchy() {
         items = new ArrayList<Item>();
 
-        ListItem li1 = new ListItem("Item 1");
+        ListItem li1 = new ListItem("");
         ListItem li2 = new ListItem("Item 2");
         ListItem li3 = new ListItem("Item 3");
 
