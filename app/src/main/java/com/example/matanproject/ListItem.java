@@ -24,9 +24,11 @@ public class ListItem implements Item {
 
     @Override
     public int getIconResource() {
-        if (childs.size() > 0)
+        if (childs.size() == 0)
+            return R.drawable.paper;
+        if (childs.get(0).getChilds().size() == 0)
             return R.drawable.book;
-        return R.drawable.paper;
+        return R.drawable.library;
     }
 
     public void addChild (Item item) {

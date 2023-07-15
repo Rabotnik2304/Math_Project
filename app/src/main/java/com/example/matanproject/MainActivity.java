@@ -45,7 +45,7 @@ public class MainActivity extends Activity {
             while (i<matanTikets.length && matanTikets[i].indexOf('|')==5) {
                 ListItem tiket = new ListItem(matanTikets[i]);
                 i++;
-                while (i<matanTikets.length && matanTikets[i].indexOf('|')==7) {
+                while (i<matanTikets.length && matanTikets[i].indexOf('|')==8) {
                     tiket.addChild(new ListItem(matanTikets[i]));
                     i++;
                 }

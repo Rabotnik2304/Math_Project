@@ -1,6 +1,7 @@
 package com.example.matanproject;
 
 import android.content.Context;
+import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -61,11 +62,21 @@ public class ListAdapter extends BaseAdapter {
 
         TextView title = (TextView)convertView.findViewById(R.id.title);
 
+        title.setAllCaps(false);
+        title.setTypeface(null, Typeface.NORMAL);
+
         Pair pair = hierarchyArray.get(position);
 
         title.setText(pair.item.getTitle());
         title.setCompoundDrawablesWithIntrinsicBounds(pair.item.getIconResource(), 0, 0, 0);
-        title.setPadding((pair.level+1) * 20, 0, 0, 0);
+        title.setPadding((pair.level+1) * 30, 0, 0, 0);
+        if (pair.level==0){
+            title.setAllCaps(true);
+            title.setTypeface(null, Typeface.BOLD);
+        } else if (pair.level==1) {
+            title.setTypeface(null, Typeface.BOLD);
+        }
+
         return convertView;
     }
     private void generateHierarchy() {
