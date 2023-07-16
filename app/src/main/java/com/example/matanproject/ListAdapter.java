@@ -6,15 +6,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.TextView;
-
-import com.example.matanproject.Item;
-import com.example.matanproject.R;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
 
-public class ListAdapter extends BaseAdapter {
+
+public class ListAdapter extends BaseAdapter implements Filterable {
     private class Pair {
         Item item;
         int level;
@@ -24,20 +24,22 @@ public class ListAdapter extends BaseAdapter {
             this.level = level;
         }
     }
-    private LayoutInflater mLayoutInflater; // 1
-    private ArrayList<Pair> hierarchyArray; // 2
+    private LayoutInflater mLayoutInflater;
+    private ArrayList<Pair> hierarchyArray;
+    private ModelFilter filter;
+    private ArrayList<Item> originalHierarchicalItems;
+    private LinkedList<Item> openItems;
+    private String[] allTitles;
 
-    private ArrayList<Item> originalItems; // 3
-    private LinkedList<Item> openItems; // 4
-
-    public ListAdapter (Context ctx, ArrayList<Item> items) {
+    public ListAdapter (Context ctx, ArrayList<Item> itemsHierarchical, String[] allTitles ) {
         mLayoutInflater = LayoutInflater.from(ctx);
-        originalItems = items;
+        originalHierarchicalItems = itemsHierarchical;
 
         hierarchyArray = new ArrayList<Pair>();
         openItems = new LinkedList<Item>();
 
-        generateHierarchy(); // 5
+        this.allTitles = allTitles;
+        generateHierarchy();
     }
 
     @Override
@@ -81,7 +83,7 @@ public class ListAdapter extends BaseAdapter {
     }
     private void generateHierarchy() {
         hierarchyArray.clear();
-        generateList(originalItems,0);
+        generateList(originalHierarchicalItems,0);
     }
 
     private void generateList(ArrayList<Item> items, int level) {
@@ -109,4 +111,52 @@ public class ListAdapter extends BaseAdapter {
         }
         return false;
     }
+
+    @Override
+    public Filter getFilter() {
+        if (filter == null){
+            filter  = new ModelFilter();
+        }
+        return filter;
+    }
+
+    private class ModelFilter extends Filter
+    {
+        @Override
+        protected FilterResults performFiltering(CharSequence constraint) {
+
+            constraint = constraint.toString().toLowerCase();
+            FilterResults result = new FilterResults();
+            if(constraint.toString().length() > 0)
+            {
+                ArrayList<Pair> filteredItems = new ArrayList<Pair>();
+
+                for(int i = 0; i < allTitles.length; i++)
+                {
+                    if(allTitles[i].toLowerCase().contains(constraint))
+                        filteredItems.add(new Pair(new ListItem(allTitles[i]),0));
+                }
+                result.count = filteredItems.size();
+                result.values = filteredItems;
+            }
+            else
+            {
+                synchronized(this)
+                {
+                    generateHierarchy();
+                    result.values = hierarchyArray;
+                    result.count = hierarchyArray.size();
+                }
+            }
+            return result;
+        }
+
+        @SuppressWarnings("unchecked")
+        @Override
+        protected void publishResults(CharSequence constraint, FilterResults results) {
+            hierarchyArray = (ArrayList<Pair>)results.values;
+            notifyDataSetChanged();
+        }
+    }
 }
+

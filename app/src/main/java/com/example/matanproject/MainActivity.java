@@ -2,25 +2,32 @@ package com.example.matanproject;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.EditText;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 
 public class MainActivity extends Activity {
 
-    ArrayList<Item> items;
+    ArrayList<Item> itemsHierarchical;
     ListAdapter adapter;
+
+
+    EditText search;
+    final String[] matanTikets = getResources().getStringArray(R.array.matan_tikets);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        items = generateSomeHierarchy();
+        itemsHierarchical = generateSomeHierarchy();
 
-        adapter = new ListAdapter(this, items);
+        adapter = new ListAdapter(this, itemsHierarchical, matanTikets);
 
         ListView mList = (ListView) this.findViewById(R.id.list_item);
         mList.setAdapter(adapter);
@@ -30,13 +37,25 @@ public class MainActivity extends Activity {
                 adapter.clickOnItem(position);
             }
         });
+
+        search = (EditText) findViewById(R.id.search);
+        search.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            }
+            @Override
+            public void afterTextChanged(Editable s) {
+                adapter.getFilter().filter(s.toString());
+            }
+        });
     }
 
     private ArrayList<Item> generateSomeHierarchy() {
 
-        String[] matanTikets = getResources().getStringArray(R.array.matan_tikets);
-
-        items = new ArrayList<Item>();
+        itemsHierarchical = new ArrayList<Item>();
         int i=0;
 
         while (i<matanTikets.length && matanTikets[i].indexOf('|')==2){
@@ -51,8 +70,8 @@ public class MainActivity extends Activity {
                 }
                 partTikets.addChild(tiket);
             }
-            items.add(partTikets);
+            itemsHierarchical.add(partTikets);
         }
-        return items;
+        return itemsHierarchical;
     }
 }
