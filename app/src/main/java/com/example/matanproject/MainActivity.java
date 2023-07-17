@@ -15,17 +15,14 @@ public class MainActivity extends Activity {
 
     ArrayList<Item> itemsHierarchical;
     ListAdapter adapter;
-
-
     EditText search;
-    final String[] matanTikets = getResources().getStringArray(R.array.matan_tikets);
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        itemsHierarchical = generateSomeHierarchy();
+        String[] matanTikets = getResources().getStringArray(R.array.matan_tikets);
+        itemsHierarchical = generateSomeHierarchy(matanTikets);
 
         adapter = new ListAdapter(this, itemsHierarchical, matanTikets);
 
@@ -53,8 +50,7 @@ public class MainActivity extends Activity {
         });
     }
 
-    private ArrayList<Item> generateSomeHierarchy() {
-
+    private ArrayList<Item> generateSomeHierarchy(String[] matanTikets) {
         itemsHierarchical = new ArrayList<Item>();
         int i=0;
 
