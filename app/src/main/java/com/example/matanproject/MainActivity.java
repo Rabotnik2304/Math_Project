@@ -14,6 +14,7 @@ import java.util.ArrayList;
 public class MainActivity extends Activity {
 
     ArrayList<Item> itemsHierarchical;
+    ArrayList <String> mathTiketPoints;
     ListAdapter adapter;
     EditText search;
     @Override
@@ -21,10 +22,11 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        String[] matanTikets = getResources().getStringArray(R.array.matan_tikets);
-        itemsHierarchical = generateSomeHierarchy(matanTikets);
+        String[] mathTikets = getResources().getStringArray(R.array.matan_tikets);
+        itemsHierarchical = getHierarchicalListTikets(mathTikets);
+        mathTiketPoints = getPointsFromTikets(mathTikets);
 
-        adapter = new ListAdapter(this, itemsHierarchical, matanTikets);
+        adapter = new ListAdapter(this, itemsHierarchical, mathTiketPoints);
 
         ListView mList = (ListView) this.findViewById(R.id.list_item);
         mList.setAdapter(adapter);
@@ -50,18 +52,18 @@ public class MainActivity extends Activity {
         });
     }
 
-    private ArrayList<Item> generateSomeHierarchy(String[] matanTikets) {
+    private ArrayList<Item> getHierarchicalListTikets(String[] mathTikets) {
         itemsHierarchical = new ArrayList<Item>();
         int i=0;
 
-        while (i<matanTikets.length && matanTikets[i].indexOf('|')==2){
-            ListItem partTikets = new ListItem(matanTikets[i]);
+        while (i<mathTikets.length && mathTikets[i].indexOf('|')==2){
+            ListItem partTikets = new ListItem(mathTikets[i]);
             i++;
-            while (i<matanTikets.length && matanTikets[i].indexOf('|')==5) {
-                ListItem tiket = new ListItem(matanTikets[i]);
+            while (i<mathTikets.length && mathTikets[i].indexOf('|')==5) {
+                ListItem tiket = new ListItem(mathTikets[i]);
                 i++;
-                while (i<matanTikets.length && matanTikets[i].indexOf('|')==8) {
-                    tiket.addChild(new ListItem(matanTikets[i]));
+                while (i<mathTikets.length && mathTikets[i].indexOf('|')==8) {
+                    tiket.addChild(new ListItem(mathTikets[i]));
                     i++;
                 }
                 partTikets.addChild(tiket);
@@ -69,5 +71,16 @@ public class MainActivity extends Activity {
             itemsHierarchical.add(partTikets);
         }
         return itemsHierarchical;
+    }
+    private ArrayList <String> getPointsFromTikets(String[] mathTikets) {
+        mathTiketPoints  = new ArrayList <String>();
+
+        for (String line: mathTikets){
+            if (line.indexOf('|')==8) {
+                mathTiketPoints.add(line);
+            }
+        }
+
+        return mathTiketPoints;
     }
 }

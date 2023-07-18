@@ -29,16 +29,18 @@ public class ListAdapter extends BaseAdapter implements Filterable {
     private ModelFilter filter;
     private ArrayList<Item> originalHierarchicalItems;
     private LinkedList<Item> openItems;
-    private String[] allTitles;
+    private ArrayList<String> lowestHierarchicalItems;
 
-    public ListAdapter (Context ctx, ArrayList<Item> itemsHierarchical, String[] allTitles ) {
+    private boolean searchActivate = false;
+
+    public ListAdapter (Context ctx, ArrayList<Item> itemsHierarchical, ArrayList<String> lowestHierarchicalItems) {
         mLayoutInflater = LayoutInflater.from(ctx);
         originalHierarchicalItems = itemsHierarchical;
 
         hierarchyArray = new ArrayList<Pair>();
         openItems = new LinkedList<Item>();
 
-        this.allTitles = allTitles;
+        this.lowestHierarchicalItems = lowestHierarchicalItems;
         generateHierarchy();
     }
 
@@ -72,13 +74,15 @@ public class ListAdapter extends BaseAdapter implements Filterable {
         title.setText(pair.item.getTitle());
         title.setCompoundDrawablesWithIntrinsicBounds(pair.item.getIconResource(), 0, 0, 0);
         title.setPadding((pair.level+1) * 30, 0, 0, 0);
-        if (pair.level==0){
-            title.setAllCaps(true);
-            title.setTypeface(null, Typeface.BOLD);
-        } else if (pair.level==1) {
-            title.setTypeface(null, Typeface.BOLD);
-        }
 
+        if (!searchActivate) {
+            if (pair.level == 0) {
+                title.setAllCaps(true);
+                title.setTypeface(null, Typeface.BOLD);
+            } else if (pair.level == 1) {
+                title.setTypeface(null, Typeface.BOLD);
+            }
+        }
         return convertView;
     }
     private void generateHierarchy() {
@@ -95,14 +99,17 @@ public class ListAdapter extends BaseAdapter implements Filterable {
     }
     public void clickOnItem (int position) {
 
-        Item i = hierarchyArray.get(position).item;
-        if (!closeItem(i))
-            openItems.add(i);
+        if (searchActivate) {
+            //gets to user photos of this tiket
+        } else {
+            Item i = hierarchyArray.get(position).item;
+            if (!closeItem(i))
+                openItems.add(i);
 
-        generateHierarchy();
-        notifyDataSetChanged();
+            generateHierarchy();
+            notifyDataSetChanged();
+        }
     }
-
     private boolean closeItem (Item i) {
         if (openItems.remove(i)) {
             for (Item c : i.getChilds())
@@ -129,12 +136,13 @@ public class ListAdapter extends BaseAdapter implements Filterable {
             FilterResults result = new FilterResults();
             if(constraint.toString().length() > 0)
             {
+                searchActivate = true;
                 ArrayList<Pair> filteredItems = new ArrayList<Pair>();
 
-                for(int i = 0; i < allTitles.length; i++)
+                for(int i = 0; i < lowestHierarchicalItems .size(); i++)
                 {
-                    if(allTitles[i].toLowerCase().contains(constraint))
-                        filteredItems.add(new Pair(new ListItem(allTitles[i]),0));
+                    if(lowestHierarchicalItems.get(i).toLowerCase().contains(constraint))
+                        filteredItems.add(new Pair(new ListItem(lowestHierarchicalItems.get(i)),0));
                 }
                 result.count = filteredItems.size();
                 result.values = filteredItems;
@@ -143,6 +151,7 @@ public class ListAdapter extends BaseAdapter implements Filterable {
             {
                 synchronized(this)
                 {
+                    searchActivate = false;
                     generateHierarchy();
                     result.values = hierarchyArray;
                     result.count = hierarchyArray.size();
