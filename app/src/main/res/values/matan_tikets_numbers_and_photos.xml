@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="matan_tikets_numbers_and_photos">
+        <item>Билет 1</item>
+        <item>photos/photo_2@07-11-2022_12-05-38_thumb.jpg</item>
+        <item>photos/photo_3@07-11-2022_12-05-38_thumb.jpg</item>
+        <item>photos/photo_4@07-11-2022_12-05-38_thumb.jpg</item>
+        <item>photos/photo_5@07-11-2022_12-05-38_thumb.jpg</item>
+        <item>photos/photo_6@07-11-2022_12-05-38_thumb.jpg</item>
+        <item>photos/photo_7@07-11-2022_12-05-38_thumb.jpg</item>
+        <item>photos/photo_8@07-11-2022_12-05-38_thumb.jpg</item>
+        <item>photos/photo_9@07-11-2022_12-05-38_thumb.jpg</item>
+        <item>photos/photo_10@07-11-2022_12-05-38_thumb.jpg</item>
+        <item>Билет 2</item>
+        <item>photos/photo_11@07-11-2022_12-11-45_thumb.jpg</item>
+        <item>photos/photo_12@07-11-2022_12-11-45_thumb.jpg</item>
+        <item>photos/photo_13@07-11-2022_12-11-45_thumb.jpg</item>
+        <item>Билет 3</item>
+        <item>photos/photo_14@07-11-2022_12-14-04_thumb.jpg</item>
+        <item>photos/photo_15@07-11-2022_12-14-04_thumb.jpg</item>
+        <item>photos/photo_16@07-11-2022_12-14-04_thumb.jpg</item>
+        <item>photos/photo_17@07-11-2022_12-14-04_thumb.jpg</item>
+        <item>Билет 4</item>
+        <item>photos/photo_18@07-11-2022_12-17-33_thumb.jpg</item>
+        <item>photos/photo_19@07-11-2022_12-17-33_thumb.jpg</item>
+        <item>photos/photo_20@07-11-2022_12-17-33_thumb.jpg</item>
+        <item>photos/photo_21@07-11-2022_12-17-34_thumb.jpg</item>
+        <item>Билет 5</item>
+        <item>photos/photo_22@07-11-2022_12-24-30_thumb.jpg</item>
+        <item>photos/photo_23@07-11-2022_12-24-30_thumb.jpg</item>
+        <item>photos/photo_24@07-11-2022_12-24-30_thumb.jpg</item>
+        <item>photos/photo_25@07-11-2022_12-24-30_thumb.jpg</item>
+        <item>photos/photo_26@07-11-2022_12-24-30_thumb.jpg</item>
+        <item>photos/photo_27@07-11-2022_12-24-30_thumb.jpg</item>
+        <item>photos/photo_28@07-11-2022_12-24-30_thumb.jpg</item>
+        <item>Билет 6</item>
+        <item>photos/photo_29@07-11-2022_12-31-00_thumb.jpg</item>
+        <item>photos/photo_30@07-11-2022_12-31-00_thumb.jpg</item>
+        <item>photos/photo_31@07-11-2022_12-31-00_thumb.jpg</item>
+        <item>photos/photo_32@07-11-2022_12-31-00_thumb.jpg</item>
+        <item>photos/photo_33@07-11-2022_12-31-00_thumb.jpg</item>
+        <item>photos/photo_34@07-11-2022_12-31-00_thumb.jpg</item>
+        <item>Билет 7</item>
+        <item>photos/photo_35@07-11-2022_12-33-03_thumb.jpg</item>
+        <item>photos/photo_36@07-11-2022_12-33-03_thumb.jpg</item>
+        <item>photos/photo_37@07-11-2022_12-33-03_thumb.jpg</item>
+        <item>photos/photo_38@07-11-2022_12-33-03_thumb.jpg</item>
+        <item>Билет 8</item>
+        <item>photos/photo_39@07-11-2022_12-36-22_thumb.jpg</item>
+        <item>photos/photo_40@07-11-2022_12-36-22_thumb.jpg</item>
+        <item>photos/photo_41@07-11-2022_12-36-22_thumb.jpg</item>
+        <item>photos/photo_42@07-11-2022_12-36-22_thumb.jpg</item>
+        <item>photos/photo_43@07-11-2022_12-36-22_thumb.jpg</item>
+        <item>Билет 10</item>
+        <item>photos/photo_44@07-11-2022_13-27-24_thumb.jpg</item>
+        <item>photos/photo_45@07-11-2022_13-27-24_thumb.jpg</item>
+        <item>photos/photo_46@07-11-2022_13-27-24_thumb.jpg</item>
+        <item>photos/photo_47@07-11-2022_13-27-24_thumb.jpg</item>
+        <item>photos/photo_48@07-11-2022_13-27-24_thumb.jpg</item>
+        <item>photos/photo_49@07-11-2022_13-27-24_thumb.jpg</item>
+        <item>Билет 11</item>
+        <item>photos/photo_50@07-11-2022_13-35-46_thumb.jpg</item>
+        <item>photos/photo_51@07-11-2022_13-35-46_thumb.jpg</item>
+        <item>photos/photo_52@07-11-2022_13-35-46_thumb.jpg</item>
+        <item>Билет 12</item>
+        <item>photos/photo_53@07-11-2022_13-43-23_thumb.jpg</item>
+        <item>photos/photo_54@07-11-2022_13-43-23_thumb.jpg</item>
+        <item>photos/photo_55@07-11-2022_13-43-23_thumb.jpg</item>
+        <item>photos/photo_56@07-11-2022_13-43-23_thumb.jpg</item>
+        <item>photos/photo_57@07-11-2022_13-43-23_thumb.jpg</item>
+        <item>photos/photo_58@07-11-2022_13-43-23_thumb.jpg</item>
+        <item>photos/photo_59@07-11-2022_13-43-23_thumb.jpg</item>
+        <item>photos/photo_60@07-11-2022_13-43-23_thumb.jpg</item>
+        <item>photos/photo_61@07-11-2022_13-43-23_thumb.jpg</item>
+        <item>Билет 14</item>
+        <item>photos/photo_62@07-11-2022_14-02-21_thumb.jpg</item>
+        <item>photos/photo_63@07-11-2022_14-02-21_thumb.jpg</item>
+        <item>photos/photo_64@07-11-2022_14-02-21_thumb.jpg</item>
+        <item>photos/photo_65@07-11-2022_14-02-21_thumb.jpg</item>
+        <item>photos/photo_66@07-11-2022_14-02-22_thumb.jpg</item>
+        <item>photos/photo_67@07-11-2022_14-02-22_thumb.jpg</item>
+        <item>Билет 15</item>
+        <item>photos/photo_68@07-11-2022_14-04-43_thumb.jpg</item>
+        <item>photos/photo_69@07-11-2022_14-04-43_thumb.jpg</item>
+        <item>photos/photo_70@07-11-2022_14-04-43_thumb.jpg</item>
+        <item>photos/photo_71@07-11-2022_14-04-43_thumb.jpg</item>
+        <item>Билет 9</item>
+        <item>photos/photo_72@11-11-2022_18-20-38_thumb.jpg</item>
+        <item>photos/photo_73@11-11-2022_18-20-38_thumb.jpg</item>
+        <item>photos/photo_74@11-11-2022_18-20-38_thumb.jpg</item>
+        <item>photos/photo_75@11-11-2022_18-20-38_thumb.jpg</item>
+        <item>photos/photo_76@11-11-2022_18-20-38_thumb.jpg</item>
+        <item>photos/photo_77@11-11-2022_18-20-39_thumb.jpg</item>
+        <item>Билет 13</item>
+        <item>photos/photo_78@11-11-2022_18-28-21_thumb.jpg</item>
+        <item>photos/photo_79@11-11-2022_18-28-21_thumb.jpg</item>
+        <item>photos/photo_80@11-11-2022_18-28-21_thumb.jpg</item>
+        <item>photos/photo_81@11-11-2022_18-28-21_thumb.jpg</item>
+        <item>photos/photo_82@11-11-2022_18-28-21_thumb.jpg</item>
+        <item>photos/photo_83@11-11-2022_18-28-21_thumb.jpg</item>
+        <item>Билет 16</item>
+        <item>photos/photo_84@11-11-2022_18-31-19_thumb.jpg</item>
+        <item>photos/photo_85@11-11-2022_18-31-19_thumb.jpg</item>
+        <item>photos/photo_86@11-11-2022_18-31-20_thumb.jpg</item>
+        <item>photos/photo_87@11-11-2022_18-31-20_thumb.jpg</item>
+        <item>photos/photo_88@11-11-2022_18-31-20_thumb.jpg</item>
+        <item>photos/photo_89@11-11-2022_18-31-20_thumb.jpg</item>
+        <item>Билет 1 </item>
+        <item>photos/photo_90@12-12-2022_11-46-32_thumb.jpg</item>
+        <item>photos/photo_91@12-12-2022_11-46-32_thumb.jpg</item>
+        <item>photos/photo_92@12-12-2022_11-46-32_thumb.jpg</item>
+        <item>photos/photo_93@12-12-2022_11-46-33_thumb.jpg</item>
+        <item>Билет 2 </item>
+        <item>photos/photo_94@12-12-2022_11-52-44_thumb.jpg</item>
+        <item>photos/photo_95@12-12-2022_11-52-44_thumb.jpg</item>
+        <item>photos/photo_96@12-12-2022_11-52-44_thumb.jpg</item>
+        <item>photos/photo_97@12-12-2022_11-52-44_thumb.jpg</item>
+        <item>photos/photo_98@12-12-2022_11-52-44_thumb.jpg</item>
+        <item>photos/photo_99@12-12-2022_11-52-44_thumb.jpg</item>
+        <item>photos/photo_100@12-12-2022_11-52-44_thumb.jpg</item>
+        <item>Билет 3 </item>
+        <item>photos/photo_101@05-01-2023_16-08-26_thumb.jpg</item>
+        <item>photos/photo_102@05-01-2023_16-08-26_thumb.jpg</item>
+        <item>photos/photo_103@05-01-2023_16-08-26_thumb.jpg</item>
+        <item>photos/photo_104@05-01-2023_16-08-26_thumb.jpg</item>
+        <item>photos/photo_105@05-01-2023_16-08-26_thumb.jpg</item>
+        <item>photos/photo_106@05-01-2023_16-08-26_thumb.jpg</item>
+        <item>photos/photo_107@05-01-2023_16-08-26_thumb.jpg</item>
+        <item>Билет 4 </item>
+        <item>photos/photo_108@05-01-2023_16-14-49_thumb.jpg</item>
+        <item>photos/photo_109@05-01-2023_16-14-50_thumb.jpg</item>
+        <item>photos/photo_110@05-01-2023_16-14-50_thumb.jpg</item>
+        <item>photos/photo_111@05-01-2023_16-14-50_thumb.jpg</item>
+        <item>photos/photo_112@05-01-2023_16-14-50_thumb.jpg</item>
+        <item>photos/photo_113@05-01-2023_16-14-50_thumb.jpg</item>
+        <item>photos/photo_114@05-01-2023_16-14-50_thumb.jpg</item>
+        <item>Билет 5 </item>
+        <item>photos/photo_115@05-01-2023_16-30-54_thumb.jpg</item>
+        <item>photos/photo_116@05-01-2023_16-30-54_thumb.jpg</item>
+        <item>photos/photo_117@05-01-2023_16-30-54_thumb.jpg</item>
+        <item>photos/photo_118@05-01-2023_16-30-54_thumb.jpg</item>
+        <item>photos/photo_119@05-01-2023_16-30-54_thumb.jpg</item>
+        <item>photos/photo_120@05-01-2023_16-30-54_thumb.jpg</item>
+        <item>photos/photo_121@05-01-2023_16-46-18_thumb.jpg</item>
+        <item>photos/photo_122@05-01-2023_16-46-18_thumb.jpg</item>
+        <item>photos/photo_123@05-01-2023_16-46-18_thumb.jpg</item>
+        <item>photos/photo_124@05-01-2023_16-46-18_thumb.jpg</item>
+        <item>photos/photo_125@05-01-2023_16-46-18_thumb.jpg</item>
+        <item>photos/photo_126@05-01-2023_16-46-18_thumb.jpg</item>
+        <item>photos/photo_127@05-01-2023_16-46-18_thumb.jpg</item>
+        <item>photos/photo_128@05-01-2023_16-46-18_thumb.jpg</item>
+        <item>photos/photo_129@05-01-2023_16-46-18_thumb.jpg</item>
+        <item>photos/photo_130@05-01-2023_16-46-18_thumb.jpg</item>
+        <item>photos/photo_131@05-01-2023_16-46-18_thumb.jpg</item>
+        <item>photos/photo_132@05-01-2023_16-46-19_thumb.jpg</item>
+        <item>Билет 6 </item>
+        <item>photos/photo_133@05-01-2023_17-13-52_thumb.jpg</item>
+        <item>photos/photo_134@05-01-2023_17-13-52_thumb.jpg</item>
+        <item>photos/photo_135@05-01-2023_17-13-52_thumb.jpg</item>
+        <item>photos/photo_136@05-01-2023_17-13-52_thumb.jpg</item>
+        <item>photos/photo_137@05-01-2023_17-13-52_thumb.jpg</item>
+        <item>photos/photo_138@05-01-2023_17-13-52_thumb.jpg</item>
+        <item>photos/photo_139@05-01-2023_17-13-52_thumb.jpg</item>
+        <item>photos/photo_140@05-01-2023_17-13-52_thumb.jpg</item>
+        <item>photos/photo_141@05-01-2023_17-13-52_thumb.jpg</item>
+        <item>photos/photo_142@05-01-2023_17-13-53_thumb.jpg</item>
+        <item>photos/photo_143@05-01-2023_17-13-55_thumb.jpg</item>
+        <item>photos/photo_144@05-01-2023_17-13-55_thumb.jpg</item>
+        <item>photos/photo_145@05-01-2023_17-13-55_thumb.jpg</item>
+        <item>photos/photo_146@05-01-2023_17-13-56_thumb.jpg</item>
+        <item>photos/photo_147@05-01-2023_17-13-56_thumb.jpg</item>
+        <item>photos/photo_148@05-01-2023_17-13-56_thumb.jpg</item>
+        <item>photos/photo_149@05-01-2023_17-13-56_thumb.jpg</item>
+        <item>Билет 7 </item>
+        <item>photos/photo_150@05-01-2023_17-35-29_thumb.jpg</item>
+        <item>photos/photo_151@05-01-2023_17-35-29_thumb.jpg</item>
+        <item>photos/photo_152@05-01-2023_17-35-29_thumb.jpg</item>
+        <item>photos/photo_153@05-01-2023_17-35-29_thumb.jpg</item>
+        <item>photos/photo_154@05-01-2023_17-35-29_thumb.jpg</item>
+        <item>photos/photo_155@05-01-2023_17-35-29_thumb.jpg</item>
+        <item>photos/photo_156@05-01-2023_17-35-29_thumb.jpg</item>
+        <item>photos/photo_157@05-01-2023_17-35-30_thumb.jpg</item>
+        <item>Билет 8 </item>
+        <item>photos/photo_158@05-01-2023_17-45-23_thumb.jpg</item>
+        <item>photos/photo_159@05-01-2023_17-45-23_thumb.jpg</item>
+        <item>photos/photo_160@05-01-2023_17-45-23_thumb.jpg</item>
+        <item>photos/photo_161@05-01-2023_17-45-23_thumb.jpg</item>
+        <item>photos/photo_162@05-01-2023_17-45-23_thumb.jpg</item>
+        <item>photos/photo_163@05-01-2023_17-45-23_thumb.jpg</item>
+        <item>photos/photo_164@05-01-2023_17-45-23_thumb.jpg</item>
+        <item>Билет 9 </item>
+        <item>photos/photo_165@05-01-2023_18-06-59_thumb.jpg</item>
+        <item>photos/photo_166@05-01-2023_18-06-59_thumb.jpg</item>
+        <item>photos/photo_167@05-01-2023_18-06-59_thumb.jpg</item>
+        <item>photos/photo_168@05-01-2023_18-06-59_thumb.jpg</item>
+        <item>photos/photo_169@05-01-2023_18-06-59_thumb.jpg</item>
+        <item>photos/photo_170@05-01-2023_18-06-59_thumb.jpg</item>
+        <item>photos/photo_171@05-01-2023_18-06-59_thumb.jpg</item>
+        <item>photos/photo_172@05-01-2023_18-06-59_thumb.jpg</item>
+        <item>photos/photo_173@05-01-2023_18-06-59_thumb.jpg</item>
+        <item>photos/photo_174@05-01-2023_18-06-59_thumb.jpg</item>
+        <item>photos/photo_175@05-01-2023_18-07-04_thumb.jpg</item>
+        <item>photos/photo_176@05-01-2023_18-07-04_thumb.jpg</item>
+        <item>photos/photo_177@05-01-2023_18-07-04_thumb.jpg</item>
+        <item>photos/photo_178@05-01-2023_18-07-04_thumb.jpg</item>
+        <item>photos/photo_179@05-01-2023_18-07-04_thumb.jpg</item>
+        <item>photos/photo_180@05-01-2023_18-07-04_thumb.jpg</item>
+        <item>photos/photo_181@05-01-2023_18-07-04_thumb.jpg</item>
+        <item>photos/photo_182@05-01-2023_18-07-04_thumb.jpg</item>
+        <item>photos/photo_183@05-01-2023_18-07-04_thumb.jpg</item>
+        <item>Билет 10</item>
+        <item>photos/photo_184@05-01-2023_18-15-45_thumb.jpg</item>
+        <item>photos/photo_185@05-01-2023_18-15-45_thumb.jpg</item>
+        <item>photos/photo_186@05-01-2023_18-15-45_thumb.jpg</item>
+        <item>photos/photo_187@05-01-2023_18-15-45_thumb.jpg</item>
+        <item>photos/photo_188@05-01-2023_18-15-45_thumb.jpg</item>
+        <item>Билет 11</item>
+        <item>photos/photo_189@05-01-2023_18-33-45_thumb.jpg</item>
+        <item>photos/photo_190@05-01-2023_18-33-45_thumb.jpg</item>
+        <item>photos/photo_191@05-01-2023_18-33-45_thumb.jpg</item>
+        <item>photos/photo_192@05-01-2023_18-33-45_thumb.jpg</item>
+        <item>photos/photo_193@05-01-2023_18-33-45_thumb.jpg</item>
+        <item>photos/photo_194@05-01-2023_18-33-45_thumb.jpg</item>
+        <item>photos/photo_195@05-01-2023_18-33-45_thumb.jpg</item>
+        <item>photos/photo_196@05-01-2023_18-33-45_thumb.jpg</item>
+        <item>photos/photo_197@05-01-2023_18-33-45_thumb.jpg</item>
+        <item>photos/photo_198@05-01-2023_18-33-45_thumb.jpg</item>
+        <item>photos/photo_199@05-01-2023_18-33-49_thumb.jpg</item>
+        <item>photos/photo_200@05-01-2023_18-33-49_thumb.jpg</item>
+        <item>photos/photo_201@05-01-2023_18-33-49_thumb.jpg</item>
+        <item>photos/photo_202@05-01-2023_18-33-49_thumb.jpg</item>
+        <item>photos/photo_203@05-01-2023_18-33-49_thumb.jpg</item>
+        <item>photos/photo_204@05-01-2023_18-33-49_thumb.jpg</item>
+        <item>photos/photo_205@05-01-2023_18-33-49_thumb.jpg</item>
+        <item>photos/photo_206@05-01-2023_18-33-49_thumb.jpg</item>
+        <item>Билет 12</item>
+        <item>photos/photo_207@05-01-2023_18-39-30_thumb.jpg</item>
+        <item>photos/photo_208@05-01-2023_18-39-30_thumb.jpg</item>
+        <item>photos/photo_209@05-01-2023_18-39-30_thumb.jpg</item>
+        <item>photos/photo_210@05-01-2023_18-39-30_thumb.jpg</item>
+        <item>Билет 13</item>
+        <item>photos/photo_211@05-01-2023_18-49-34_thumb.jpg</item>
+        <item>photos/photo_212@05-01-2023_18-49-34_thumb.jpg</item>
+        <item>photos/photo_213@05-01-2023_18-49-34_thumb.jpg</item>
+        <item>photos/photo_214@05-01-2023_18-49-34_thumb.jpg</item>
+        <item>photos/photo_215@05-01-2023_18-49-34_thumb.jpg</item>
+        <item>photos/photo_216@05-01-2023_18-49-35_thumb.jpg</item>
+        <item>photos/photo_217@05-01-2023_18-49-35_thumb.jpg</item>
+        <item>photos/photo_218@05-01-2023_18-49-35_thumb.jpg</item>
+        <item>photos/photo_219@05-01-2023_18-54-47_thumb.jpg</item>
+        <item>Билет 14</item>
+        <item>photos/photo_220@05-01-2023_18-59-36_thumb.jpg</item>
+        <item>photos/photo_221@05-01-2023_18-59-37_thumb.jpg</item>
+        <item>photos/photo_222@05-01-2023_18-59-37_thumb.jpg</item>
+        <item>photos/photo_223@05-01-2023_18-59-37_thumb.jpg</item>
+        <item>photos/photo_224@05-01-2023_18-59-37_thumb.jpg</item>
+        <item>photos/photo_225@05-01-2023_18-59-37_thumb.jpg</item>
+        <item>photos/photo_226@05-01-2023_18-59-37_thumb.jpg</item>
+        <item>photos/photo_227@05-01-2023_18-59-37_thumb.jpg</item>
+        <item>photos/photo_228@05-01-2023_18-59-37_thumb.jpg</item>
+        <item>photos/photo_229@05-01-2023_18-59-37_thumb.jpg</item>
+        <item>Билет 15</item>
+        <item>photos/photo_230@05-01-2023_19-05-49_thumb.jpg</item>
+        <item>photos/photo_231@05-01-2023_19-05-49_thumb.jpg</item>
+        <item>photos/photo_232@05-01-2023_19-05-49_thumb.jpg</item>
+        <item>photos/photo_233@05-01-2023_19-05-49_thumb.jpg</item>
+        <item>photos/photo_234@05-01-2023_19-05-49_thumb.jpg</item>
+        <item>photos/photo_235@05-01-2023_19-05-49_thumb.jpg</item>
+        <item>photos/photo_236@05-01-2023_19-05-49_thumb.jpg</item>
+        <item>Билет 1 </item>
+        <item>photos/photo_237@24-02-2023_14-26-51_thumb.jpg</item>
+        <item>photos/photo_238@24-02-2023_14-26-51_thumb.jpg</item>
+        <item>photos/photo_239@24-02-2023_14-26-51_thumb.jpg</item>
+        <item>photos/photo_240@24-02-2023_14-26-51_thumb.jpg</item>
+        <item>Билет 2 </item>
+        <item>photos/photo_241@17-03-2023_17-58-24_thumb.jpg</item>
+        <item>photos/photo_242@17-03-2023_17-58-24_thumb.jpg</item>
+        <item>photos/photo_243@17-03-2023_17-58-24_thumb.jpg</item>
+        <item>Билет 3 </item>
+        <item>photos/photo_244@17-03-2023_18-00-18_thumb.jpg</item>
+        <item>Билет 4 </item>
+        <item>photos/photo_245@17-03-2023_18-04-37_thumb.jpg</item>
+        <item>photos/photo_246@17-03-2023_18-04-37_thumb.jpg</item>
+        <item>photos/photo_247@17-03-2023_18-04-38_thumb.jpg</item>
+        <item>photos/photo_248@17-03-2023_18-04-38_thumb.jpg</item>
+        <item>photos/photo_249@17-03-2023_18-04-38_thumb.jpg</item>
+        <item>photos/photo_250@17-03-2023_18-04-38_thumb.jpg</item>
+        <item>photos/photo_251@17-03-2023_18-04-38_thumb.jpg</item>
+        <item>photos/photo_252@17-03-2023_18-04-38_thumb.jpg</item>
+        <item>Билет 5 </item>
+        <item>photos/photo_253@17-03-2023_18-12-16_thumb.jpg</item>
+        <item>photos/photo_254@17-03-2023_18-12-16_thumb.jpg</item>
+        <item>photos/photo_255@17-03-2023_18-12-16_thumb.jpg</item>
+        <item>photos/photo_256@17-03-2023_18-12-17_thumb.jpg</item>
+        <item>photos/photo_257@17-03-2023_18-12-17_thumb.jpg</item>
+        <item>Билет 6 </item>
+        <item>photos/photo_258@17-03-2023_18-20-12_thumb.jpg</item>
+        <item>photos/photo_259@17-03-2023_18-20-12_thumb.jpg</item>
+        <item>photos/photo_260@17-03-2023_18-20-12_thumb.jpg</item>
+        <item>photos/photo_261@17-03-2023_18-20-12_thumb.jpg</item>
+        <item>photos/photo_262@17-03-2023_18-20-12_thumb.jpg</item>
+        <item>photos/photo_263@17-03-2023_18-20-12_thumb.jpg</item>
+        <item>photos/photo_264@17-03-2023_18-20-12_thumb.jpg</item>
+        <item>photos/photo_265@17-03-2023_18-20-12_thumb.jpg</item>
+        <item>Билет 7 </item>
+        <item>photos/photo_266@17-03-2023_18-30-29_thumb.jpg</item>
+        <item>photos/photo_267@17-03-2023_18-30-29_thumb.jpg</item>
+        <item>photos/photo_268@17-03-2023_18-30-29_thumb.jpg</item>
+        <item>photos/photo_269@17-03-2023_18-30-29_thumb.jpg</item>
+        <item>photos/photo_270@17-03-2023_18-30-29_thumb.jpg</item>
+        <item>photos/photo_271@17-03-2023_18-30-29_thumb.jpg</item>
+        <item>photos/photo_272@17-03-2023_18-30-29_thumb.jpg</item>
+        <item>photos/photo_273@17-03-2023_18-30-29_thumb.jpg</item>
+        <item>Билет 8 </item>
+        <item>photos/photo_274@17-03-2023_18-32-13_thumb.jpg</item>
+        <item>photos/photo_275@17-03-2023_18-32-13_thumb.jpg</item>
+        <item>photos/photo_276@17-03-2023_18-32-13_thumb.jpg</item>
+        <item>photos/photo_277@17-03-2023_18-32-13_thumb.jpg</item>
+        <item>Билет 9 </item>
+        <item>photos/photo_278@17-03-2023_18-38-27_thumb.jpg</item>
+        <item>photos/photo_279@17-03-2023_18-38-28_thumb.jpg</item>
+        <item>photos/photo_280@17-03-2023_18-38-28_thumb.jpg</item>
+        <item>photos/photo_281@17-03-2023_18-38-28_thumb.jpg</item>
+        <item>photos/photo_282@17-03-2023_18-38-28_thumb.jpg</item>
+        <item>photos/photo_283@17-03-2023_18-38-28_thumb.jpg</item>
+        <item>photos/photo_284@17-03-2023_18-38-28_thumb.jpg</item>
+        <item>photos/photo_285@17-03-2023_18-38-28_thumb.jpg</item>
+        <item>photos/photo_286@17-03-2023_18-38-28_thumb.jpg</item>
+        <item>photos/photo_287@17-03-2023_18-38-28_thumb.jpg</item>
+        <item>photos/photo_288@17-03-2023_18-38-42_thumb.jpg</item>
+        <item>Билет 10</item>
+        <item>photos/photo_289@17-03-2023_18-45-43_thumb.jpg</item>
+        <item>photos/photo_290@17-03-2023_18-45-43_thumb.jpg</item>
+        <item>photos/photo_291@17-03-2023_18-45-43_thumb.jpg</item>
+        <item>photos/photo_292@17-03-2023_18-45-43_thumb.jpg</item>
+        <item>photos/photo_293@17-03-2023_18-45-43_thumb.jpg</item>
+        <item>photos/photo_294@17-03-2023_18-45-43_thumb.jpg</item>
+        <item>photos/photo_295@17-03-2023_18-45-44_thumb.jpg</item>
+        <item>photos/photo_296@17-03-2023_18-45-44_thumb.jpg</item>
+        <item>Билет 11</item>
+        <item>photos/photo_297@17-03-2023_18-48-02_thumb.jpg</item>
+        <item>photos/photo_298@17-03-2023_18-48-02_thumb.jpg</item>
+        <item>photos/photo_299@17-03-2023_18-48-02_thumb.jpg</item>
+        <item>photos/photo_300@17-03-2023_18-59-21_thumb.jpg</item>
+        <item>photos/photo_301@17-03-2023_18-59-21_thumb.jpg</item>
+        <item>Билет 12</item>
+        <item>photos/photo_302@17-03-2023_19-01-16_thumb.jpg</item>
+        <item>photos/photo_303@17-03-2023_19-01-16_thumb.jpg</item>
+        <item>photos/photo_304@17-03-2023_19-01-16_thumb.jpg</item>
+        <item>photos/photo_305@17-03-2023_19-01-16_thumb.jpg</item>
+        <item>photos/photo_306@17-03-2023_19-01-16_thumb.jpg</item>
+        <item>photos/photo_307@17-03-2023_19-01-16_thumb.jpg</item>
+        <item>photos/photo_308@17-03-2023_19-01-17_thumb.jpg</item>
+        <item>Билет 13</item>
+        <item>photos/photo_309@17-03-2023_19-02-57_thumb.jpg</item>
+        <item>photos/photo_310@17-03-2023_19-02-57_thumb.jpg</item>
+        <item>photos/photo_311@17-03-2023_19-02-58_thumb.jpg</item>
+        <item>photos/photo_312@17-03-2023_19-02-58_thumb.jpg</item>
+        <item>photos/photo_313@17-03-2023_19-02-58_thumb.jpg</item>
+        <item>photos/photo_314@17-03-2023_19-02-58_thumb.jpg</item>
+        <item>photos/photo_315@17-03-2023_19-02-58_thumb.jpg</item>
+        <item>Билет 14</item>
+        <item>photos/photo_316@17-03-2023_19-03-39_thumb.jpg</item>
+        <item>photos/photo_317@17-03-2023_19-03-40_thumb.jpg</item>
+        <item>photos/photo_318@17-03-2023_19-03-40_thumb.jpg</item>
+        <item>photos/photo_319@17-03-2023_19-03-40_thumb.jpg</item>
+        <item>photos/photo_320@17-03-2023_19-03-40_thumb.jpg</item>
+        <item>photos/photo_321@17-03-2023_19-03-40_thumb.jpg</item>
+        <item>Билет 15</item>
+        <item>photos/photo_322@03-04-2023_10-33-13_thumb.jpg</item>
+        <item>photos/photo_323@03-04-2023_10-33-13_thumb.jpg</item>
+        <item>photos/photo_324@03-04-2023_10-33-13_thumb.jpg</item>
+        <item>photos/photo_325@03-04-2023_10-33-13_thumb.jpg</item>
+        <item>photos/photo_326@03-04-2023_10-33-13_thumb.jpg</item>
+        <item>photos/photo_327@03-04-2023_10-33-13_thumb.jpg</item>
+        <item>photos/photo_328@03-04-2023_10-35-40_thumb.jpg</item>
+        <item>photos/photo_329@03-04-2023_10-35-40_thumb.jpg</item>
+        <item>photos/photo_330@03-04-2023_10-35-40_thumb.jpg</item>
+        <item>photos/photo_331@03-04-2023_10-35-41_thumb.jpg</item>
+        <item>Билет 16</item>
+        <item>photos/photo_332@03-04-2023_10-39-12_thumb.jpg</item>
+        <item>photos/photo_333@03-04-2023_10-39-12_thumb.jpg</item>
+        <item>photos/photo_334@03-04-2023_10-39-12_thumb.jpg</item>
+        <item>photos/photo_335@03-04-2023_10-39-13_thumb.jpg</item>
+        <item>Билет 17</item>
+        <item>photos/photo_336@03-04-2023_10-46-16_thumb.jpg</item>
+        <item>photos/photo_337@03-04-2023_10-46-16_thumb.jpg</item>
+        <item>photos/photo_338@03-04-2023_10-46-16_thumb.jpg</item>
+        <item>photos/photo_339@03-04-2023_10-46-16_thumb.jpg</item>
+        <item>photos/photo_340@03-04-2023_10-46-16_thumb.jpg</item>
+        <item>photos/photo_341@03-04-2023_10-46-16_thumb.jpg</item>
+        <item>photos/photo_342@03-04-2023_10-46-17_thumb.jpg</item>
+        <item>photos/photo_343@03-04-2023_10-46-17_thumb.jpg</item>
+        <item>photos/photo_344@03-04-2023_10-46-17_thumb.jpg</item>
+        <item>photos/photo_345@03-04-2023_10-46-17_thumb.jpg</item>
+        <item>Билет 1 </item>
+        <item>photos/photo_346@06-06-2023_20-24-47_thumb.jpg</item>
+        <item>photos/photo_347@06-06-2023_20-24-47_thumb.jpg</item>
+        <item>photos/photo_348@06-06-2023_20-24-47_thumb.jpg</item>
+        <item>photos/photo_349@06-06-2023_20-24-47_thumb.jpg</item>
+        <item>photos/photo_350@06-06-2023_20-24-47_thumb.jpg</item>
+        <item>photos/photo_351@06-06-2023_20-24-47_thumb.jpg</item>
+        <item>photos/photo_352@06-06-2023_20-24-47_thumb.jpg</item>
+        <item>photos/photo_353@06-06-2023_20-24-47_thumb.jpg</item>
+        <item>photos/photo_354@06-06-2023_20-24-48_thumb.jpg</item>
+        <item>photos/photo_355@06-06-2023_20-24-48_thumb.jpg</item>
+        <item>photos/photo_356@06-06-2023_20-24-48_thumb.jpg</item>
+        <item>photos/photo_357@06-06-2023_20-24-48_thumb.jpg</item>
+        <item>photos/photo_358@06-06-2023_20-24-48_thumb.jpg</item>
+        <item>photos/photo_359@06-06-2023_20-24-48_thumb.jpg</item>
+        <item>photos/photo_360@06-06-2023_20-24-48_thumb.jpg</item>
+        <item>photos/photo_361@06-06-2023_20-24-48_thumb.jpg</item>
+        <item>Билет 2 </item>
+        <item>photos/photo_362@06-06-2023_20-26-15_thumb.jpg</item>
+        <item>photos/photo_363@06-06-2023_20-26-16_thumb.jpg</item>
+        <item>photos/photo_364@06-06-2023_20-26-16_thumb.jpg</item>
+        <item>photos/photo_365@06-06-2023_20-26-16_thumb.jpg</item>
+        <item>photos/photo_366@06-06-2023_20-26-16_thumb.jpg</item>
+        <item>photos/photo_367@06-06-2023_20-26-16_thumb.jpg</item>
+        <item>photos/photo_368@06-06-2023_20-26-16_thumb.jpg</item>
+        <item>Билет 3 </item>
+        <item>photos/photo_369@06-06-2023_20-27-13_thumb.jpg</item>
+        <item>photos/photo_370@06-06-2023_20-27-13_thumb.jpg</item>
+        <item>photos/photo_371@06-06-2023_20-27-13_thumb.jpg</item>
+        <item>photos/photo_372@06-06-2023_20-27-13_thumb.jpg</item>
+        <item>photos/photo_373@06-06-2023_20-27-14_thumb.jpg</item>
+        <item>photos/photo_374@06-06-2023_20-27-14_thumb.jpg</item>
+        <item>Билет 4 </item>
+        <item>photos/photo_375@06-06-2023_20-28-22_thumb.jpg</item>
+        <item>photos/photo_376@06-06-2023_20-28-22_thumb.jpg</item>
+        <item>photos/photo_377@06-06-2023_20-28-22_thumb.jpg</item>
+        <item>photos/photo_378@06-06-2023_20-28-22_thumb.jpg</item>
+        <item>photos/photo_379@06-06-2023_20-28-22_thumb.jpg</item>
+        <item>photos/photo_380@06-06-2023_20-28-23_thumb.jpg</item>
+        <item>photos/photo_381@06-06-2023_20-28-23_thumb.jpg</item>
+        <item>photos/photo_382@06-06-2023_20-28-23_thumb.jpg</item>
+        <item>photos/photo_383@06-06-2023_20-28-23_thumb.jpg</item>
+        <item>Билет 5 </item>
+        <item>photos/photo_384@06-06-2023_20-28-51_thumb.jpg</item>
+        <item>photos/photo_385@06-06-2023_20-28-52_thumb.jpg</item>
+        <item>photos/photo_386@06-06-2023_20-28-52_thumb.jpg</item>
+        <item>photos/photo_387@06-06-2023_20-28-52_thumb.jpg</item>
+        <item>photos/photo_388@06-06-2023_20-28-52_thumb.jpg</item>
+        <item>Билет 6 </item>
+        <item>photos/photo_389@06-06-2023_20-29-58_thumb.jpg</item>
+        <item>photos/photo_390@06-06-2023_20-29-58_thumb.jpg</item>
+        <item>photos/photo_391@06-06-2023_20-29-58_thumb.jpg</item>
+        <item>Билет 7 </item>
+        <item>photos/photo_392@06-06-2023_20-30-48_thumb.jpg</item>
+        <item>photos/photo_393@06-06-2023_20-30-48_thumb.jpg</item>
+        <item>photos/photo_394@06-06-2023_20-30-48_thumb.jpg</item>
+        <item>Билет 8 </item>
+        <item>photos/photo_395@06-06-2023_20-31-30_thumb.jpg</item>
+        <item>photos/photo_396@06-06-2023_20-31-30_thumb.jpg</item>
+        <item>photos/photo_397@06-06-2023_20-31-30_thumb.jpg</item>
+        <item>photos/photo_398@06-06-2023_20-31-30_thumb.jpg</item>
+        <item>photos/photo_399@06-06-2023_20-31-30_thumb.jpg</item>
+        <item>Билет 9 </item>
+        <item>photos/photo_400@06-06-2023_20-32-14_thumb.jpg</item>
+        <item>photos/photo_401@06-06-2023_20-32-14_thumb.jpg</item>
+        <item>photos/photo_402@06-06-2023_20-32-14_thumb.jpg</item>
+        <item>photos/photo_403@06-06-2023_20-32-14_thumb.jpg</item>
+        <item>photos/photo_404@06-06-2023_20-32-14_thumb.jpg</item>
+        <item>photos/photo_405@06-06-2023_20-32-14_thumb.jpg</item>
+        <item>photos/photo_406@06-06-2023_20-32-14_thumb.jpg</item>
+        <item>Билет 10</item>
+        <item>photos/photo_407@06-06-2023_20-33-05_thumb.jpg</item>
+        <item>photos/photo_408@06-06-2023_20-33-05_thumb.jpg</item>
+        <item>photos/photo_409@06-06-2023_20-33-05_thumb.jpg</item>
+        <item>photos/photo_410@06-06-2023_20-33-05_thumb.jpg</item>
+        <item>photos/photo_411@06-06-2023_20-33-05_thumb.jpg</item>
+        <item>photos/photo_412@06-06-2023_20-33-05_thumb.jpg</item>
+        <item>photos/photo_413@06-06-2023_20-33-05_thumb.jpg</item>
+        <item>photos/photo_414@06-06-2023_20-33-05_thumb.jpg</item>
+        <item>Билет 11</item>
+        <item>photos/photo_415@06-06-2023_20-33-53_thumb.jpg</item>
+        <item>photos/photo_416@06-06-2023_20-33-53_thumb.jpg</item>
+        <item>photos/photo_417@06-06-2023_20-33-53_thumb.jpg</item>
+        <item>photos/photo_418@06-06-2023_20-33-54_thumb.jpg</item>
+        <item>Билет 12</item>
+        <item>photos/photo_419@06-06-2023_20-34-18_thumb.jpg</item>
+        <item>photos/photo_420@06-06-2023_20-34-19_thumb.jpg</item>
+        <item>photos/photo_421@06-06-2023_20-34-19_thumb.jpg</item>
+        <item>photos/photo_422@06-06-2023_20-34-19_thumb.jpg</item>
+        <item>photos/photo_423@06-06-2023_20-34-19_thumb.jpg</item>
+        <item>photos/photo_424@06-06-2023_20-34-19_thumb.jpg</item>
+        <item>photos/photo_425@06-06-2023_20-34-19_thumb.jpg</item>
+        <item>Билет 13</item>
+        <item>photos/photo_426@06-06-2023_20-34-55_thumb.jpg</item>
+        <item>photos/photo_427@06-06-2023_20-34-56_thumb.jpg</item>
+        <item>photos/photo_428@06-06-2023_20-34-56_thumb.jpg</item>
+        <item>Билет 14</item>
+        <item>photos/photo_429@06-06-2023_20-35-47_thumb.jpg</item>
+        <item>photos/photo_430@06-06-2023_20-35-47_thumb.jpg</item>
+        <item>photos/photo_431@06-06-2023_20-35-47_thumb.jpg</item>
+        <item>photos/photo_432@06-06-2023_20-35-47_thumb.jpg</item>
+        <item>photos/photo_433@06-06-2023_20-35-47_thumb.jpg</item>
+        <item>photos/photo_434@06-06-2023_20-35-48_thumb.jpg</item>
+        <item>photos/photo_435@06-06-2023_20-35-48_thumb.jpg</item>
+        <item>photos/photo_436@06-06-2023_20-35-48_thumb.jpg</item>
+        <item>photos/photo_437@06-06-2023_20-35-48_thumb.jpg</item>
+        <item>photos/photo_438@06-06-2023_20-35-48_thumb.jpg</item>
+        <item>photos/photo_480@07-06-2023_09-17-34_thumb.jpg</item>
+        <item>Билет 15</item>
+        <item>photos/photo_439@06-06-2023_20-36-19_thumb.jpg</item>
+        <item>photos/photo_440@06-06-2023_20-36-19_thumb.jpg</item>
+        <item>photos/photo_441@06-06-2023_20-36-19_thumb.jpg</item>
+        <item>photos/photo_442@06-06-2023_20-36-19_thumb.jpg</item>
+        <item>photos/photo_443@06-06-2023_20-36-19_thumb.jpg</item>
+        <item>photos/photo_444@06-06-2023_20-36-19_thumb.jpg</item>
+        <item>photos/photo_445@06-06-2023_20-36-19_thumb.jpg</item>
+        <item>photos/photo_446@06-06-2023_20-36-19_thumb.jpg</item>
+        <item>photos/photo_447@06-06-2023_20-36-19_thumb.jpg</item>
+        <item>photos/photo_448@06-06-2023_20-36-19_thumb.jpg</item>
+        <item>photos/photo_449@06-06-2023_20-36-19_thumb.jpg</item>
+        <item>photos/photo_450@06-06-2023_20-36-19_thumb.jpg</item>
+        <item>photos/photo_451@06-06-2023_20-36-20_thumb.jpg</item>
+        <item>Билет 16</item>
+        <item>photos/photo_452@06-06-2023_20-37-11_thumb.jpg</item>
+        <item>photos/photo_453@06-06-2023_20-37-11_thumb.jpg</item>
+        <item>photos/photo_454@06-06-2023_20-37-11_thumb.jpg</item>
+        <item>photos/photo_455@06-06-2023_20-37-11_thumb.jpg</item>
+        <item>photos/photo_456@06-06-2023_20-37-11_thumb.jpg</item>
+        <item>photos/photo_457@06-06-2023_20-37-11_thumb.jpg</item>
+        <item>Билет 17</item>
+        <item>photos/photo_458@06-06-2023_20-38-02_thumb.jpg</item>
+        <item>photos/photo_459@06-06-2023_20-38-03_thumb.jpg</item>
+        <item>photos/photo_460@06-06-2023_20-38-03_thumb.jpg</item>
+        <item>photos/photo_461@06-06-2023_20-38-03_thumb.jpg</item>
+        <item>photos/photo_462@06-06-2023_20-38-03_thumb.jpg</item>
+        <item>photos/photo_463@06-06-2023_20-38-03_thumb.jpg</item>
+        <item>photos/photo_464@06-06-2023_20-38-03_thumb.jpg</item>
+        <item>photos/photo_465@06-06-2023_20-38-03_thumb.jpg</item>
+        <item>Билет 18</item>
+        <item>photos/photo_466@06-06-2023_20-41-25_thumb.jpg</item>
+        <item>photos/photo_467@06-06-2023_20-41-25_thumb.jpg</item>
+        <item>photos/photo_468@06-06-2023_20-41-59_thumb.jpg</item>
+        <item>photos/photo_469@06-06-2023_20-41-59_thumb.jpg</item>
+        <item>photos/photo_470@06-06-2023_20-42-00_thumb.jpg</item>
+        <item>photos/photo_471@06-06-2023_20-42-00_thumb.jpg</item>
+        <item>photos/photo_472@06-06-2023_20-42-00_thumb.jpg</item>
+        <item>photos/photo_473@06-06-2023_20-42-00_thumb.jpg</item>
+        <item>photos/photo_474@06-06-2023_20-42-00_thumb.jpg</item>
+        <item>photos/photo_475@06-06-2023_20-42-00_thumb.jpg</item>
+        <item>photos/photo_476@06-06-2023_20-42-00_thumb.jpg</item>
+        <item>photos/photo_477@06-06-2023_20-42-00_thumb.jpg</item>
+        <item>photos/photo_478@06-06-2023_20-42-00_thumb.jpg</item>
+        <item>photos/photo_479@06-06-2023_20-42-00_thumb.jpg</item>
+    </string-array>
+</resources>

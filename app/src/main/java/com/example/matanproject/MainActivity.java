@@ -23,10 +23,11 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         String[] mathTikets = getResources().getStringArray(R.array.matan_tikets);
+        String[] mathTiketsNumbersAndPhotos = getResources().getStringArray(R.array.matan_tikets_numbers_and_photos);
         itemsHierarchical = getHierarchicalListTikets(mathTikets);
         mathTiketPoints = getPointsFromTikets(mathTikets);
 
-        adapter = new ListAdapter(this, itemsHierarchical, mathTiketPoints);
+        adapter = new ListAdapter(this, itemsHierarchical, mathTiketPoints, mathTiketsNumbersAndPhotos);
 
         ListView mList = (ListView) this.findViewById(R.id.list_item);
         mList.setAdapter(adapter);

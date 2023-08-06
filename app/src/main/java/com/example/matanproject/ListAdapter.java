@@ -9,6 +9,7 @@ import android.widget.BaseAdapter;
 import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -30,10 +31,10 @@ public class ListAdapter extends BaseAdapter implements Filterable {
     private ArrayList<Item> originalHierarchicalItems;
     private LinkedList<Item> openItems;
     private ArrayList<String> lowestHierarchicalItems;
-
+    private String[] linksToPhotos;
     private boolean searchActivate = false;
 
-    public ListAdapter (Context ctx, ArrayList<Item> itemsHierarchical, ArrayList<String> lowestHierarchicalItems) {
+    public ListAdapter (Context ctx, ArrayList<Item> itemsHierarchical, ArrayList<String> lowestHierarchicalItems, String[] linksToPhotos) {
         mLayoutInflater = LayoutInflater.from(ctx);
         originalHierarchicalItems = itemsHierarchical;
 
@@ -41,6 +42,7 @@ public class ListAdapter extends BaseAdapter implements Filterable {
         openItems = new LinkedList<Item>();
 
         this.lowestHierarchicalItems = lowestHierarchicalItems;
+        this.linksToPhotos = linksToPhotos;
         generateHierarchy();
     }
 
@@ -99,9 +101,29 @@ public class ListAdapter extends BaseAdapter implements Filterable {
     }
     public void clickOnItem (int position) {
 
-        if (searchActivate) {
-            //gets to user photos of this tiket
+        if (searchActivate || lowestHierarchicalItems.contains(hierarchyArray.get(position).item)) {
+            int pointPartNumber =  hierarchyArray.get(position).item.getTitle().charAt(0) -48;
+            int pointTiketNumber = Integer.parseInt(hierarchyArray.get(position).item.getTitle().substring(2,4));
+
+            int partNumber = 0;
+            int tiketNumber = 0;
+            boolean tiketFouned = false;
+            for (String line:linksToPhotos) {
+                if (line.contains("Билет 1")){
+                    tiketNumber = 1;
+                    partNumber ++;
+                }
+                if (partNumber == pointPartNumber&& tiketNumber==pointTiketNumber){
+                    tiketFouned = true;
+                }
+                if (tiketFouned&&!line.contains("Билет")){
+
+                }else{
+                    break;
+                }
+            }
         } else {
+
             Item i = hierarchyArray.get(position).item;
             if (!closeItem(i))
                 openItems.add(i);
@@ -139,16 +161,14 @@ public class ListAdapter extends BaseAdapter implements Filterable {
                 searchActivate = true;
                 ArrayList<Pair> filteredItems = new ArrayList<Pair>();
 
-                for(int i = 0; i < lowestHierarchicalItems .size(); i++)
+                for(int i = 0; i < lowestHierarchicalItems.size(); i++)
                 {
                     if(lowestHierarchicalItems.get(i).toLowerCase().contains(constraint))
                         filteredItems.add(new Pair(new ListItem(lowestHierarchicalItems.get(i)),0));
                 }
                 result.count = filteredItems.size();
                 result.values = filteredItems;
-            }
-            else
-            {
+            }else{
                 synchronized(this)
                 {
                     searchActivate = false;
