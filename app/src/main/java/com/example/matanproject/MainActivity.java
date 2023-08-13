@@ -1,6 +1,7 @@
 package com.example.matanproject;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -13,10 +14,10 @@ import java.util.ArrayList;
 
 public class MainActivity extends Activity {
 
-    ArrayList<Item> itemsHierarchical;
-    ArrayList <String> mathTiketPoints;
-    ListAdapter adapter;
-    EditText search;
+    private ArrayList<Item> itemsHierarchical;
+    private ArrayList <String> mathTiketPoints;
+    private ListAdapter adapter;
+    private EditText search;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,7 +35,12 @@ public class MainActivity extends Activity {
         mList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                adapter.clickOnItem(position);
+                Intent intent = new Intent(MainActivity.this, ActivityForTiketDemonstration.class);
+
+                adapter.clickOnItem(position,intent);
+                if (intent.getBooleanExtra("isTiketOpened",false)){
+                    startActivity(intent);
+                }
             }
         });
 

@@ -1,10 +1,12 @@
 package com.example.matanproject;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.Filter;
 import android.widget.Filterable;
@@ -99,29 +101,39 @@ public class ListAdapter extends BaseAdapter implements Filterable {
                 generateList(i.getChilds(),level+1);
         }
     }
-    public void clickOnItem (int position) {
+    public void clickOnItem (int position, Intent pageForTiket) {
 
-        if (searchActivate || lowestHierarchicalItems.contains(hierarchyArray.get(position).item)) {
+        if (searchActivate || lowestHierarchicalItems.contains(hierarchyArray.get(position).item.getTitle())) {
             int pointPartNumber =  hierarchyArray.get(position).item.getTitle().charAt(0) -48;
             int pointTiketNumber = Integer.parseInt(hierarchyArray.get(position).item.getTitle().substring(2,4));
 
             int partNumber = 0;
             int tiketNumber = 0;
             boolean tiketFouned = false;
+            ArrayList<String> tiketPhotos = new ArrayList<String>();
+
             for (String line:linksToPhotos) {
-                if (line.contains("Билет 1")){
+                if (line.contentEquals("Билет 1")){
                     tiketNumber = 1;
                     partNumber ++;
+                }else if (line.contains("Билет")) {
+                    tiketNumber++;
                 }
-                if (partNumber == pointPartNumber&& tiketNumber==pointTiketNumber){
-                    tiketFouned = true;
-                }
-                if (tiketFouned&&!line.contains("Билет")){
-
-                }else{
+                if (line.contains("Билет") && tiketFouned){
                     break;
                 }
+
+                if (tiketFouned){
+                    tiketPhotos.add(line);
+                }
+
+                if (partNumber == pointPartNumber && tiketNumber==pointTiketNumber){
+                    tiketFouned = true;
+                }
             }
+
+            pageForTiket.putExtra("tiketPhotos",tiketPhotos);
+            pageForTiket.putExtra("isTiketOpened",true);
         } else {
 
             Item i = hierarchyArray.get(position).item;
