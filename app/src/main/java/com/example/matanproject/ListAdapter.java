@@ -175,7 +175,12 @@ public class ListAdapter extends BaseAdapter implements Filterable {
 
                 for(int i = 0; i < lowestHierarchicalItems.size(); i++)
                 {
-                    if(lowestHierarchicalItems.get(i).toLowerCase().contains(constraint))
+                    if(lowestHierarchicalItems.get(i).toLowerCase().startsWith(constraint.toString(),9))
+                        filteredItems.add(new Pair(new ListItem(lowestHierarchicalItems.get(i)),0));
+                }
+                for(int i = 0; i < lowestHierarchicalItems.size(); i++)
+                {
+                    if(lowestHierarchicalItems.get(i).toLowerCase().contains(constraint) && !filteredItems.contains(constraint))
                         filteredItems.add(new Pair(new ListItem(lowestHierarchicalItems.get(i)),0));
                 }
                 result.count = filteredItems.size();
