@@ -28,7 +28,7 @@ public class ListItem implements Item {
             return R.drawable.paper;
         if (childs.get(0).getChilds().size() == 0)
             return R.drawable.book;
-        return R.drawable.library;
+        return R.drawable.bookshelf;
     }
 
     public void addChild (Item item) {

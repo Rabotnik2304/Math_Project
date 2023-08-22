@@ -6,12 +6,10 @@ import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -32,18 +30,18 @@ public class ListAdapter extends BaseAdapter implements Filterable {
     private ModelFilter filter;
     private ArrayList<Item> originalHierarchicalItems;
     private LinkedList<Item> openItems;
-    private ArrayList<String> lowestHierarchicalItems;
+    private ArrayList<String> titlesLowestHierarchicalItems;
     private String[] linksToPhotos;
     private boolean searchActivate = false;
 
-    public ListAdapter (Context ctx, ArrayList<Item> itemsHierarchical, ArrayList<String> lowestHierarchicalItems, String[] linksToPhotos) {
+    public ListAdapter (Context ctx, ArrayList<Item> itemsHierarchical, ArrayList<String> titlesLowestHierarchicalItems, String[] linksToPhotos) {
         mLayoutInflater = LayoutInflater.from(ctx);
         originalHierarchicalItems = itemsHierarchical;
 
         hierarchyArray = new ArrayList<Pair>();
         openItems = new LinkedList<Item>();
 
-        this.lowestHierarchicalItems = lowestHierarchicalItems;
+        this.titlesLowestHierarchicalItems = titlesLowestHierarchicalItems;
         this.linksToPhotos = linksToPhotos;
         generateHierarchy();
     }
@@ -103,14 +101,14 @@ public class ListAdapter extends BaseAdapter implements Filterable {
     }
     public void clickOnItem (int position, Intent pageForTiket) {
 
-        if (searchActivate || lowestHierarchicalItems.contains(hierarchyArray.get(position).item.getTitle())) {
-            int pointPartNumber =  hierarchyArray.get(position).item.getTitle().charAt(0) -48;
+        if (searchActivate || titlesLowestHierarchicalItems.contains(hierarchyArray.get(position).item.getTitle())) {
+            int pointPartNumber =  hierarchyArray.get(position).item.getTitle().charAt(0) - 48;
             int pointTiketNumber = Integer.parseInt(hierarchyArray.get(position).item.getTitle().substring(2,4));
 
             int partNumber = 0;
             int tiketNumber = 0;
             boolean tiketFouned = false;
-            ArrayList<String> tiketPhotos = new ArrayList<String>();
+            ArrayList<String> linksTiketPhotos = new ArrayList<String>();
 
             for (String line:linksToPhotos) {
                 if (line.contentEquals("Билет 1")){
@@ -124,7 +122,7 @@ public class ListAdapter extends BaseAdapter implements Filterable {
                 }
 
                 if (tiketFouned){
-                    tiketPhotos.add(line);
+                    linksTiketPhotos.add(line);
                 }
 
                 if (partNumber == pointPartNumber && tiketNumber==pointTiketNumber){
@@ -132,7 +130,7 @@ public class ListAdapter extends BaseAdapter implements Filterable {
                 }
             }
 
-            pageForTiket.putExtra("tiketPhotos",tiketPhotos);
+            pageForTiket.putExtra("linksTiketPhotos",linksTiketPhotos);
             pageForTiket.putExtra("isTiketOpened",true);
         } else {
 
@@ -173,15 +171,15 @@ public class ListAdapter extends BaseAdapter implements Filterable {
                 searchActivate = true;
                 ArrayList<Pair> filteredItems = new ArrayList<Pair>();
 
-                for(int i = 0; i < lowestHierarchicalItems.size(); i++)
+                for(int i = 0; i < titlesLowestHierarchicalItems.size(); i++)
                 {
-                    if(lowestHierarchicalItems.get(i).toLowerCase().startsWith(constraint.toString(),9))
-                        filteredItems.add(new Pair(new ListItem(lowestHierarchicalItems.get(i)),0));
+                    if(titlesLowestHierarchicalItems.get(i).toLowerCase().startsWith(constraint.toString(),9))
+                        filteredItems.add(new Pair(new ListItem(titlesLowestHierarchicalItems.get(i)),0));
                 }
-                for(int i = 0; i < lowestHierarchicalItems.size(); i++)
+                for(int i = 0; i < titlesLowestHierarchicalItems.size(); i++)
                 {
-                    if(lowestHierarchicalItems.get(i).toLowerCase().contains(constraint) && !filteredItems.contains(constraint))
-                        filteredItems.add(new Pair(new ListItem(lowestHierarchicalItems.get(i)),0));
+                    if(titlesLowestHierarchicalItems.get(i).toLowerCase().contains(constraint) && !filteredItems.contains(constraint))
+                        filteredItems.add(new Pair(new ListItem(titlesLowestHierarchicalItems.get(i)),0));
                 }
                 result.count = filteredItems.size();
                 result.values = filteredItems;

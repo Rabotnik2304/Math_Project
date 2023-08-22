@@ -21,7 +21,7 @@ public class ActivityForTiketDemonstration extends AppCompatActivity {
         setContentView(R.layout.activity_for_tiket_demonstration);
 
         Bundle arguments = getIntent().getExtras();
-        ArrayList<String> linksToPhotos  = arguments.getStringArrayList("tiketPhotos");
+        ArrayList<String> linksToPhotos  = arguments.getStringArrayList("linksTiketPhotos");
         ArrayList<Bitmap> photos = new ArrayList<Bitmap>();
         for(String link:linksToPhotos)
         {

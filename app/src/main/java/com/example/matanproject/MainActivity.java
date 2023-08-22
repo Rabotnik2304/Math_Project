@@ -25,6 +25,7 @@ public class MainActivity extends Activity {
 
         String[] mathTikets = getResources().getStringArray(R.array.matan_tikets);
         String[] mathTiketsNumbersAndPhotos = getResources().getStringArray(R.array.matan_tikets_numbers_and_photos);
+
         itemsHierarchical = getHierarchicalListTikets(mathTikets);
         mathTiketPoints = getPointsFromTikets(mathTikets);
 
@@ -35,11 +36,11 @@ public class MainActivity extends Activity {
         mList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(MainActivity.this, ActivityForTiketDemonstration.class);
+                Intent pageForTiket = new Intent(MainActivity.this, ActivityForTiketDemonstration.class);
 
-                adapter.clickOnItem(position,intent);
-                if (intent.getBooleanExtra("isTiketOpened",false)){
-                    startActivity(intent);
+                adapter.clickOnItem(position,pageForTiket);
+                if (pageForTiket.getBooleanExtra("isTiketOpened",false)){
+                    startActivity(pageForTiket);
                 }
             }
         });
